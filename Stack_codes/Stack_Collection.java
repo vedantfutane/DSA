@@ -1,5 +1,5 @@
 package Stack_codes;
-import java.util.*;
+import java.util.Stack;
 
 public class Stack_Collection{
     public static void main(String[] args){

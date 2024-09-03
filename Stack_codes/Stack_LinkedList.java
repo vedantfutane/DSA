@@ -32,7 +32,7 @@ public class Stack_LinkedList {
                 return -1;
             }
             int top=head.data;
-            head=head.next;;
+            head=head.next;
             return top;
         }
 
