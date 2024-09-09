@@ -8,7 +8,7 @@ public class QueueUsing2Stack {
         static Stack<Integer> s2= new Stack<>();
 
         public boolean isEmpty(){
-            return s1.isEmpty();
+            return s1.isEmpty() && s2.isEmpty();
         }
 
         public void add(int data){
@@ -50,6 +50,5 @@ public class QueueUsing2Stack {
             System.out.println(q.peek());
             q.remove();
         }
-        
     }
 }
