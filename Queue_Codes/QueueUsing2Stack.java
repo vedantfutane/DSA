@@ -1,7 +1,7 @@
 package Queue_Codes;
 import java.util.*;
 
-
+// Queue using 2 stack   --  add with O(1)   and remove and peek with O(1)  
 public class QueueUsing2Stack {
     static class Queue{
         static Stack<Integer> s1= new Stack<>();
