@@ -1,7 +1,6 @@
 //PANAGRAM
 // Simple hai bidu jisme sentence me yaa string me all alphabets present hooo whaiiicchhhh hai PANAGRAM
 package Strings_wala;
-import java.util.Arrays;
 
 public class Panagram {
     public static void main(String[] args) {
