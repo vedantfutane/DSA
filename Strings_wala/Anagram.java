@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class Anagram {
     public static void main(String[] args) {
-        String str1="SILe  NT";
-        String str2="LISTE n";
+        String str1="SILe  NT, He IS ARAdhya";
+        String str2="LISTE n, hE iS Haradya";
 
         String s1=str1.replace(" ","").toUpperCase();   // this is for spaces and loweror upper diff case string present so 
         String s2=str2.replace(" ","").toUpperCase();
