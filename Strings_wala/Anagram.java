@@ -11,6 +11,11 @@ public class Anagram {
         String s1=str1.replace(" ","").toUpperCase();   // this is for spaces and loweror upper diff case string present so 
         String s2=str2.replace(" ","").toUpperCase();
 
+        if(s1.length() != s2.length()){
+            System.out.println("String are not Anagram");
+            System.exit(0);
+        }
+
         char a[]=s1.toCharArray();
         char b[]=s2.toCharArray();
 
