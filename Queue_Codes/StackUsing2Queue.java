@@ -29,10 +29,10 @@ public class StackUsing2Queue {
             if(!q1.isEmpty()){
                 while(!q1.isEmpty()){
                     top = q1.remove();
-                if(q1.isEmpty()){
-                    break;
-                }
-                q2.add(top);
+                    if(q1.isEmpty()){
+                        break;
+                    }
+                    q2.add(top);
                 }   
             }else{
                 while(!q2.isEmpty()){
