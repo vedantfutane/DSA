@@ -1,8 +1,8 @@
-// Insert data in heap using ArrayList with O(logn) time complexity
 package Heaps_Codes;
-import java.util.*;
 
-public class Heap_insert {
+import java.util.ArrayList;
+
+public class Maxheap_code {
     static class Heap{
         ArrayList<Integer> arr=new ArrayList<>();
 
@@ -11,7 +11,7 @@ public class Heap_insert {
             int child= arr.size()-1 ;  // For child
             int parent=(child-1)/2 ;   // For Parent
 
-            while(arr.get(child) < arr.get(parent)){         //yaha pr sign chage karo reverse hoga
+            while(arr.get(child) > arr.get(parent)){         //yaha pr sign chage karo reverse hoga
                 int temp = arr.get(child);
                 arr.set(child, arr.get(parent));
                 arr.set(parent, temp);
@@ -31,11 +31,11 @@ public class Heap_insert {
             int right=(2*i)+2;
             int minIdx=i;
 
-            if(left< arr.size() && arr.get(minIdx)>arr.get(left)){     //yaha pr sign chage karo reverse hoga
+            if(left< arr.size() && arr.get(minIdx) < arr.get(left)){     //yaha pr sign chage karo reverse hoga
                 minIdx=left;
             }
 
-            if(right< arr.size() && arr.get(minIdx)>arr.get(right)){    //yaha pr sign chage karo reverse hoga
+            if(right< arr.size() && arr.get(minIdx) < arr.get(right)){    //yaha pr sign chage karo reverse hoga
                 minIdx=right;
             }
 
