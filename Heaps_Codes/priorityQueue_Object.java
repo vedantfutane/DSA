@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class priorityQueue_Object {
 
-    static class Student implements Comparable<Student>{  //overriding   Comparable<Student>-- compare karega student objects me
+    static class Student implements Comparable<Student>{  //overriding   Comparable<Student> -- compare karega student objects me
         String name;
         int rank;
         public Student(String name, int rank){
