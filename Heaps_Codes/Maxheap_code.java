@@ -29,23 +29,23 @@ public class Maxheap_code {
         private void heapify(int i){
             int left=(2*i)+1;
             int right=(2*i)+2;
-            int minIdx=i;
+            int maxIdx=i;
 
-            if(left< arr.size() && arr.get(minIdx) < arr.get(left)){     //yaha pr sign chage karo reverse hoga
-                minIdx=left;
+            if(left< arr.size() && arr.get(maxIdx) < arr.get(left)){     //yaha pr sign chage karo reverse hoga
+                maxIdx=left;
             }
 
-            if(right< arr.size() && arr.get(minIdx) < arr.get(right)){    //yaha pr sign chage karo reverse hoga
-                minIdx=right;
+            if(right< arr.size() && arr.get(maxIdx) < arr.get(right)){    //yaha pr sign chage karo reverse hoga
+                maxIdx=right;
             }
 
-            if(minIdx != i){
+            if(maxIdx != i){
                 //swap
                 int temp=arr.get(i);
-                arr.set(i,arr.get(minIdx));
-                arr.set(minIdx,temp);
+                arr.set(i,arr.get(maxIdx));
+                arr.set(maxIdx,temp);
 
-                heapify(minIdx);
+                heapify(maxIdx);
             }
         }
 
