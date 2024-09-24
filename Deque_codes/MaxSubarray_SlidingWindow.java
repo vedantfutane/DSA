@@ -32,7 +32,7 @@ public class MaxSubarray_SlidingWindow {
     public static int[] maxSlidingWindow(int[] nums, int k) {
         int res[] =new int[nums.length-k+1];
         int j=0;
-        ArrayDeque<Integer> dq=new ArrayDeque();
+        ArrayDeque<Integer> dq=new ArrayDeque<Integer>();
         for(int i=0;i<nums.length;i++){
             while(!dq.isEmpty() && nums[dq.getLast()]<nums[i]){
                 dq.removeLast();
@@ -51,6 +51,7 @@ public class MaxSubarray_SlidingWindow {
     public static void main(String[] args) {
         int arr[]={1,3,-1,-3,5,3,6,7};
         int k=3;
+        
         printMax(arr, arr.length, k);
 
         int []ar=maxSlidingWindow(arr, k);
