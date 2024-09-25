@@ -49,7 +49,7 @@ public class heapSort2 {
 
         heap_Sort(arr);
 
-        //print
+        //print the output
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
