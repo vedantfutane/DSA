@@ -24,5 +24,7 @@ public class BasicHashmap {
         //remove    --    O(1)
         System.out.println(hm.remove("USA"));   // remove and return the value of key which is removed
 
+        //size
+        System.out.println(hm.size());
     }
 }
