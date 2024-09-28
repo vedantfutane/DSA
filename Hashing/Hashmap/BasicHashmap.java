@@ -26,5 +26,13 @@ public class BasicHashmap {
 
         //size
         System.out.println(hm.size());
+
+        //isEmpty
+        System.out.println(hm.isEmpty());
+
+        //clear
+        hm.clear();
+        System.out.println(hm.isEmpty());
+        System.out.println(hm.size());
     }
 }
