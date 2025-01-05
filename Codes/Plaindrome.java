@@ -12,7 +12,7 @@ public class Plaindrome {
     }
     
     public static void main(String[] args) {
-        int n=123;
+        int n=121;
         if(checkPalindrome(n)==n){
             System.out.println(n+" Number is palindrome");
         }else{
