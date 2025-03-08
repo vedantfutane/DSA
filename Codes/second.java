@@ -1,7 +1,8 @@
 package Codes;
 
-class Firstnew{
-    public static void main(String [] args){
-        System.out.println("HIII");
+class second{
+    static int a=3;
+        public static void main(String [] args){
+            System.out.println(a);
     }
 }

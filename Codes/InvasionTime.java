@@ -61,6 +61,15 @@ public class InvasionTime{
     }
 
     public static void main(String[] args) {
-        
+        char[][] grid = {
+            {'A', 'E', 'X'},
+            {'X', 'E', 'A'},
+            {'E', 'X', 'E'}
+        };
+    
+        InvasionTime invasionTime = new InvasionTime();
+        int result = invasionTime.minTimeToInvade(grid);
+    
+        System.out.println("Minimum time to invade all enemies: " + result);
     }
 }

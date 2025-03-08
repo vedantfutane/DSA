@@ -15,7 +15,7 @@ public class Stack_arrayList {
 
         public int pop(){
             if (isEmpty()) {
-                throw new IllegalStateException("Stack is empty"); 
+                throw new IllegalStateException("Stack is empty");
             }
             int top=list.get(list.size()-1);
             list.remove(list.size()-1);
